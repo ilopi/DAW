@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Compra de Entradas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>    
+    <form action="confirmacion.html" method="get">
+        <fieldset>
+            <legend>Entradas</legend>
+        <div class="formulario-seccion">
+            <label for="num-entradas">Número de entradas:</label>
+            <select id="num-entradas" name="num_entradas">
+                <!-- Número de entradas de 1 a 5 -->
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+
+            </select>
+        </div>
+        <div class="formulario-seccion">
+            <label for="categoria">Categoría:</label>
+            <select id="categoria" name="categoria">
+                <!-- Categorías -->
+                <option value="general">General</option>
+                <option value="movilidad_reducida">Movilidad reducida</option>
+                <option value="vip">Pase VIP</option>
+            </select>
+        </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Datos del Comprador</legend>
+            <!-- Nombre, apellidos, email y fecha -->
+        <div class="formulario-seccion">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="formulario-seccion">
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+        </div>
+        <div class="formulario-seccion">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="formulario-seccion">
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+        </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Pago</legend>
+            <!-- Pago y verificación -->
+        <div class="formulario-seccion">
+            <label for="visa">
+                <input type="radio" id="visa" name="metodo_pago" value="visa" required>
+                <img src="img/visaLogo.png" alt="Visa" width="50">
+            </label>
+        </div>
+        <div class="formulario-seccion">
+            <label for="mastercard">
+                <input type="radio" id="mastercard" name="metodo_pago" value="mastercard">
+                <img src="img/masterLogo.png" alt="Mastercard" width="50">
+            </label>
+        </div>
+        <div class="formulario-seccion">
+            <label for="paypal">
+                <input type="radio" id="paypal" name="metodo_pago" value="paypal">
+                <img src="img/paypalLogo.png" alt="Paypal" width="50">
+            </label>
+        </div>
+        <div class="formulario-seccion">
+            <label for="bizum">
+                <input type="radio" id="bizum" name="metodo_pago" value="bizum">
+                <img src="img/bizumLogo.jpg" alt="Bizum" width="50">
+            </label>
+        </div>
+        <div class="formulario-seccion">
+            <label for="verificacion">
+                <input type="checkbox" id="verificacion" name="verificacion" value="aceptado" required>
+                Acepto las condiciones de compra
+            </label>
+        </div>
+
+        </fieldset>
+        
+        <input type="submit" value="Proceder al pago">
+    </form>
+    <footer>
+        <p>Tarea realizada por Isabel Sánchez</p>
+    </footer>
+</body>
+</html>
