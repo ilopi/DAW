@@ -22,11 +22,27 @@ Este proyecto es una práctica de Lenguaje de Marcas que incluye la creación de
 - `img/`: Carpeta que contiene las imágenes utilizadas en el proyecto.
 
 
-## Contacto
-
-Para más información o consultas, puedes contactarme.
-
-### src
+### src - Juego de Rol
 
 **Descripción:**
+Este proyecto es un juego de rol básico implementado en Java, donde diferentes tipos de personajes (como jugadores y guerreros) pueden interactuar entre sí. El proyecto demuestra el uso de interfaces, herencia y polimorfismo en Java.
+
+**Características:**
+- **Interfaz Guerrero:** Define las acciones básicas que un guerrero puede realizar, como atacar y defender.
+- **Clase Personaje:** Clase base para todos los personajes, contiene atributos y métodos comunes como nombre, salud y nivel.
+- **Clase PJugador:** Subclase de Personaje que implementa la interfaz Guerrero, añade atributos específicos y métodos para atacar y defender.
+
+**Archivos Principales:**
+- `Guerrero.java`: Contiene la interfaz `Guerrero`, que define los métodos `atacar` y `defender`.
+- `PJugador.java`: Implementa la clase `PJugador`, que hereda de `Personaje` e implementa `Guerrero`.
+- `Personaje.java`: Contiene la clase `Personaje`, que es la superclase para `PJugador` y otros personajes.
+
+**Funcionamiento:**
+- Los personajes pueden atacar y defenderse entre sí utilizando los métodos definidos en la interfaz `Guerrero`.
+- La clase `PJugador` añade lógica específica para calcular el daño infligido y recibido, basándose en atributos como ataque, defensa y nivel.
+
+
+## Contacto
+Para más información o consultas, puedes contactarme.
+
 
